@@ -44,7 +44,7 @@
                 android:textSize="20dp" />
 
             <EditText
-                android:id="@+id/id_input"
+                android:text="ID는 자동 생성 됩니다."
                 android:layout_width="280dp"
                 android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"

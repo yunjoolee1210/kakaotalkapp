@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.List;
+
 public class Intro extends AppCompatActivity {
 
     @Override
@@ -46,11 +48,12 @@ public class Intro extends AppCompatActivity {
     static String MEM_PHONE = "phone";
     static String MEM_ADDR = "addr";
     static String MEM_PHOTO = "photo";
+
     static class Member{int seq; String name, pw, email, phone, addr, photo;}
     static interface LoginService{public void execute();}
     static interface AddService{public void execute();} //Join
-    static interface ListService{public void execute();}
-    static interface DetailService{public void execute();}
+    static interface ListService{public List<?> execute();}
+    static interface DetailService{public Object execute();}
     static interface UpdateService{public void execute();}
     static interface DeleteService{public void execute();}
 
