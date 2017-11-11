@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="회원가입"
+            android:text="친구추가"
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
@@ -207,15 +207,15 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/signup"
+                android:id="@+id/confirm_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SIGN UP"
+                android:text="CONFIRM"
                 android:textSize="25dp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/cancel"
+                android:id="@+id/cancel_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

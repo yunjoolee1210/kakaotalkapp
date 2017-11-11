@@ -116,7 +116,7 @@ public class MemberList extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //member_add 클릭시 회원가입 페이지로 redirection
-                Intent intent = new Intent(ctx,Join.class);
+                Intent intent = new Intent(ctx,MemberAdd.class);
                 startActivity(intent);
             }
         });
@@ -192,7 +192,8 @@ public class MemberList extends AppCompatActivity {
                 R.drawable.donut,
                 R.drawable.eclair,
                 R.drawable.froyo,
-                R.drawable.gingerbread
+                R.drawable.gingerbread,
+                R.drawable.human
         };
 
         @Override

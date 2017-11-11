@@ -22,10 +22,11 @@ public class Join extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EditText pw_input = findViewById(R.id.pw_input);
-                EditText name_input = findViewById(R.id.name_input);
-                EditText
-
+                /*EditText pw_input = findViewById(R.id.pw_input);*/
+                final EditText name_input = findViewById(R.id.name_input);
+                final EditText email_input = findViewById(R.id.email_input);
+                final EditText phone_input = findViewById(R.id.phone_input);
+                final EditText addr_input = findViewById(R.id.addr_input);
                 Intro.SQLiteHelper helper = new Intro.SQLiteHelper(ctx);
 
                 new Intro.AddService(){
@@ -77,7 +78,7 @@ public class Join extends AppCompatActivity {
         }
 
         public void execute(){
-            String sql = String.format("");
+            String sql = String.format(" INSERT ");//Add 쿼리 입력
             this.getDatabase().execSQL(sql);
         }
     }
