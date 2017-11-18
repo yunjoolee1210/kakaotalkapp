@@ -1,9 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.yun.app.kakaotalk.MemberDetail">
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KakaoTalk"
+        android:textSize="30dp"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원 정보"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#FFFF"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/profile"
+        android:background="#FFFF"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text=" 이 름 "
+            />
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="280dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="22dp"
+            android:background="#ecebeb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="이메일"
+        />
+        <TextView
+            android:id="@+id/detail_email"
+            android:layout_width="280dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="22dp"
+            android:background="#ecebeb" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="휴대폰"
+        />
+        <TextView
+            android:id="@+id/detail_phone"
+            android:layout_width="280dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="22dp"
+            android:background="#ecebeb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+        android:layout_width="match_parent"
+            android:layout_height="22dp"
+        android:text=" 주 소 "
+
+        />
+        <TextView
+            android:id="@+id/detail_addr"
+            android:layout_width="280dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="22dp"
+            android:background="#ecebeb" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dial_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="DIAL"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/call_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="CALL"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="UPDATE"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="LIST"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sms_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="SMS"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/email_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="EMAIL"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/album_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="ALBUM"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/music_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="MUSIC"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

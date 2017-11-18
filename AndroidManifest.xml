@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yun.app.kakaotalk">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +26,9 @@
         <activity android:name=".MemberList" />
         <activity android:name=".Join" />
         <activity android:name=".MemberDetail" />
-        <activity android:name=".MemberAdd"></activity>
+        <activity android:name=".MemberAdd" />
+        <activity android:name=".MemberUpdate" />
+        <activity android:name=".Album"></activity>
     </application>
 
 </manifest>

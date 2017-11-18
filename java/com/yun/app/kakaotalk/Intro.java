@@ -87,7 +87,7 @@ public class Intro extends AppCompatActivity {
                 db.execSQL(String.format(" INSERT INTO %s (%s,%s,%s,%s,%s,%s) " +
                         " VALUES ('%s','%s','%s','%s','%s','%s')",
                         MEM_TABLE,MEM_NAME,MEM_PW,MEM_EMAIL,MEM_PHONE,MEM_ADDR,MEM_PHOTO,
-                        "홍길동"+i,"1","hong"+i+"@test.com", "010-1111-111"+i,"서울"+i,
+                        "홍길동"+i,"1","hong"+i+"@test.com", "0101111111"+i,"서울"+i,
                         "hong"+i));*/ //테이블 생성시 dummy
 
             }

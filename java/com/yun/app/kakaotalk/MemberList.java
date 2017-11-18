@@ -124,6 +124,7 @@ public class MemberList extends AppCompatActivity {
 
     }
 
+    //추상 팩토리 패턴
     private abstract class ListQuery extends Intro.QueryFactory {
         SQLiteOpenHelper helper;
 
