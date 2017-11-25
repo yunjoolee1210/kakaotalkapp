@@ -108,6 +108,7 @@ public class MemberDetail extends AppCompatActivity {
         findViewById(R.id.sms_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(ctx, Network.class));
 
             }
         });
@@ -126,10 +127,19 @@ public class MemberDetail extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.music_btn).setOnClickListener(new View.OnClickListener() {
+     /*   findViewById(R.id.music_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+            }
+        });*/
+
+        findViewById(R.id.map_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ctx, Maps.class);
+                intent.putExtra("addr",result.addr);
+                startActivity(intent);
             }
         });
     }
